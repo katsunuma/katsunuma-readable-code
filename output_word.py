@@ -5,4 +5,5 @@ with open('./word_data.json') as f:
     dic_data = json.load(f)
 
 #単語idを指定して出力
-print(dic_data[0]["word"])
+for word_data in dic_data:
+    print(word_data["word"])
