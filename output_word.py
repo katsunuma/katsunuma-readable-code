@@ -4,6 +4,6 @@ import json
 with open('./word_data.json') as f:
     dic_data = json.load(f)
 
-#単語idを指定して出力
+#辞書データに登録されているidと単語をすべて出力
 for word_data in dic_data:
-    print(word_data["word"])
+    print(str(word_data["id"])+": " + word_data["word"])
